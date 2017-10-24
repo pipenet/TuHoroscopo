@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fmoya.tuhoroscopo.Rata"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:maxLines="1"
+    tools:ignore="Deprecated">
+
+    <ImageView
+        android:id="@+id/rata"
+        android:layout_width="206dp"
+        android:layout_height="163dp"
+        android:layout_x="89dp"
+        android:layout_y="66dp"
+        android:contentDescription="@string/rata"
+        app:srcCompat="@drawable/rata" />
+
+    <TextView
+        android:id="@+id/ratayears"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="235dp"
+        android:fontFamily="serif"
+        android:text="@string/ratayears"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:visibility="visible"
+        tools:text="@string/ratayears" />
+
+
+
+    <TextView
+        android:id="@+id/rataText"
+        android:layout_width="336dp"
+        android:layout_height="162dp"
+        android:layout_x="13dp"
+        android:layout_y="280dp"
+        android:width="@android:dimen/app_icon_size"
+        android:text="@string/rataText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:visibility="visible"
+        tools:verticalScrollbarPosition="right"
+        android:layout_gravity="right"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/Volver"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_x="7dp"
+        android:layout_y="460dp"
+        android:text="@string/volver_al_inicio"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/rataTitle"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_x="119dp"
+        android:layout_y="2dp"
+        android:ems="10"
+        android:text="@string/rataTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+</AbsoluteLayout>

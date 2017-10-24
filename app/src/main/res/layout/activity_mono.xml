@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fmoya.tuhoroscopo.Mono"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:maxLines="1"
+    tools:ignore="Deprecated">
+
+    <Button
+        android:id="@+id/Volver"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+        android:layout_y="462dp"
+        android:text="@string/volver_al_inicio"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/mono"
+        android:layout_width="206dp"
+        android:layout_height="163dp"
+        android:layout_x="89dp"
+        android:layout_y="66dp"
+        app:srcCompat="@drawable/mono"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/monoyears"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="235dp"
+        android:fontFamily="serif"
+        android:text="@string/monoyears"
+        android:textAlignment="viewStart"
+        android:textSize="12sp"
+        android:visibility="visible"
+        tools:text="@string/monoyears" />
+
+    <TextView
+        android:id="@+id/monoText"
+        android:layout_width="332dp"
+        android:layout_height="162dp"
+        android:layout_gravity="right"
+        android:layout_x="14dp"
+        android:layout_y="301dp"
+        android:width="@android:dimen/app_icon_size"
+        android:text="@string/monoText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded"
+        tools:verticalScrollbarPosition="right" />
+
+    <TextView
+        android:id="@+id/monoTitle"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="2dp"
+        android:ems="10"
+        android:text="@string/monoTitle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+</AbsoluteLayout>
